@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicon  -->
+
+        <link rel="icon" href="img/user.jpg">
+
+        <title>Portfolio Webapp AP</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><iconify-icon icon="solar:user-bold-duotone"></iconify-icon>AndrewPortfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#resume" class="nav__link">Resume</li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Andreas</span><br> <span id="auto-type"></span> </h1>
+                    <!-- Load library from the CDN -->
+                    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+                    <!-- Setup and start animation! -->
+                    <script>
+                        var typed = new Typed('#auto-type', {
+                            strings: ["Web Developer"],
+                            typeSpeed: 200,
+                            backSpeed: 200,
+                            loop:true
+                        });
+                    </script>
+                    <!-- <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                         <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Marvel Sann</span>
+                                    <span class="animated-item">Web Designer</span>
+                                    <span class="animated-item">UI Specialist</span>
+                                </div>
+                        </h1> -->
+
+                    <a href="img/Andreas_CV.pdf" download="Andreas_CV.pdf" class="btn mr-lg-2 custom-btn"><iconify-icon icon="uil:file-alt"></iconify-icon> Download Resume</a>
+                    <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/andreas-prodromou-388689200" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/cyhate" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="-10" y="-100" href="img/perfil.jpg"/>
+                        </g>
+                    </svg> 
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="animated animated-text">
+                            <span class="mr-2">Welcome to my</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Portfolio!</span>
+                                    <span class="animated-item">Website!</span> 
+                                </div>
+                        </h2>
+                        
+                        <p class="about__text">Building a successful product is a challenge. I like to develop my skills and grow professionally, and I love to learn new things. I have passion for Web Development and also i like software
+                            engineering, blockchain technology (web3), virtual reality and cybersecurity basic things to stay
+                            safe.
+                            </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Computer Skills</h2>
+                        <p class="skills__text"></p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="file-icons:php" class='skills__icon'></iconify-icon>
+                                <span class="skills__name">PHP</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="ph:file-sql-fill" class='skills__icon'></iconify-icon>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+<!-- RESUME -->
+<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+    <h2 class="section-title">Resume</h2>
+    <div class="skills__container bd-grid">
+        
+
+            <div class="col-lg-5 mr-lg-5 col-12">
+                <h2 class="mb-4 mobile-mt-2">Experiences</h2>
+  
+                  <div class="timeline">
+                      <div class="timeline-wrapper">
+                           <div class="timeline-yr">
+                                <span>2023</span>
+                           </div>
+                           <div class="timeline-info">
+                                <h3><span>IT Services and IT Consulting</span><small><a rel="nofollow" href="https://www.transalis.com/">Transalis Ltd Paphos</a></small></h3>
+                                <p>Internship
+                                    • Data Exchange • Data Integration</p>
+                           </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2022</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Information Technology - ΙΤ</span><small><a rel="nofollow" href="https://pafos.org.cy/">Pafos Municipality</a></small></h3>
+                              <p>Contract
+                                • Digitization • Smart City(Smart Parking/LoRa Network)
+                                • IT (Excel Databases) • Computers Maintenance</p>
+                          </div>
+                      </div>
+                      
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2021</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Network - Server Management and Maintenance</span><small><a rel="nofollow" href="https://www.cyta.com.cy/">Cyta LTD Paphos</a></small></h3>
+                              <p>Internship
+                                • DSLAM Maintenance • Management Network devices
+                                • Servers Maintenance and Monitoring • Optical Fiber Technology and 5G
+                               </p>
+                          </div>
+                      </div>
+  
+                  </div>
+            </div>   
+
+            <div class="col-lg-6 mr-lg-5 col-12">
+              <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                <div class="timeline">
+                    <div class="timeline-wrapper">
+                         <div class="timeline-yr">
+                              <span>2019</span>
+                         </div>
+                         <div class="timeline-info">
+                              <h3><span>BSc Computer Science and Applied Informatics</span><small><a rel="nofollow" href="https://www.nup.ac.cy/">Neapolis University</a></small></h3>
+                              <p>Four years of study and I finished my university with a GPA of 84.</p>
+                         </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span>2013</span>
+                        </div>
+                        <div class="timeline-info">
+                            <h3><span>High School Diploma</span><small>5o Lyceum High School</small></h3>
+                            <p>Positive Sciences - Graduated 5o Lyceum Giannaki Talioti – Paphos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span>2011</span>
+                        </div>
+                        <div class="timeline-info">
+                            <h3><span>ECDL</span><small><a rel="nofollow" href="https://www.ecdl.ch/en">ECDL Foundation</a></small></h3>
+                            <p>ECDL Certificates Cyprus - Cyprus Computer Society (CCS).</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        
+    </div>
+</section>
+
+            <!--===== PROJECTS-WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work1.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work2.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work3.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work4.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work5.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/cyhate?tab=repositories" class="work__img">
+                        <img src="img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="skills__container bd-grid">
+                    
+          
+                        <div class="col-lg-5 mr-lg-5 col-12">
+                          <div class="google-map w-100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52437.147503380416!2d32.39181067620628!3d34.772675360530776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e70663f42de2c9%3A0x6c05fdff50f4b5e7!2zzqDOrM-Gzr_PgiwgzprPjc-Az4HOv8-C!5e0!3m2!1sel!2s!4v1688561508261!5m2!1sel!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+              
+                          <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                              <div class="contact-info-item">
+                                <h3 class="mb-3 text-white">Say Hello</h3>
+                                <p class="footer-text mb-0">(+30) 99877227</p>
+                                <p><a href="mailto:proandreas@hotmail.com">proandreas@hotmail.com</a></p>
+                              </div>
+                          </div>
+                        </div>
+
+                    <div class="col-lg-6 mr-lg-5 col-12">
+                    <form action="https://formsubmit.co/proandreas@hotmail.com" method="POST" class="contact__form">
+                        <input type="hidden" name="_subject" value="Portofolio Contact Form!">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required> 
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" placeholder="Message" id="" cols="30" rows="10" class="contact__input" required></textarea>
+                        <input type="hidden" name="_next" value="https://cyhate.github.io/aportfolio/">
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Portofolio</p>
+            <div class="footer__social">
+                <a href="##" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="##" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="##" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">Copyright © 2023 AP. All rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </body>
+</html>
+
